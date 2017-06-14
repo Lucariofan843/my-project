@@ -8,8 +8,9 @@
 }
 
 .App-header {
-  background:url('Banner.jpg') no-repeat 100%;
-  background-size: cover;
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
   color: white;
 }
 
