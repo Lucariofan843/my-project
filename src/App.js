@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import './App.css';
+import React,  { Component } from 'react'
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import './App.css'
 
 class App extends Component {
   render() {
@@ -15,16 +16,24 @@ class App extends Component {
               </div>
             </div>
           <div className="nav">
-              <div className="nav a">
-                <nav><a href="#">About</a> |
-                     <a href="#">Programs</a> |
-                     <a href="#">Calendar</a>   </nav>
+              <div className="nav link">
+                <nav>
+                     <link href="/Home">Home</link> |
+                     <link href="/About">About</link> |
+                     <link href="/Events">Events</link>
+                </nav>
               </div>
           </div>
           </div>
-
-
     );
+        const Routed = () => (
+            <Router>
+                <div>
+
+                </div>
+            </Router>
+
+    )
   }
 }
 
