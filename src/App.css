@@ -12,7 +12,7 @@
 .App-header {
     background:url('Banner.jpg') 100% no-repeat;
     background-size:cover;
-    width: 1920px;
+    width: 1903px;
     height: 493px;
     color: white;
     -ms-flex-align: center;
@@ -53,4 +53,16 @@ nav {
 
 nav a{
     padding: .5em;
+}
+
+.Title2 {
+
+}
+
+.Card-Pic-1 {
+
+}
+
+.History {
+    align-items: left;
 }
