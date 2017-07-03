@@ -60,9 +60,16 @@ nav a{
 }
 
 .Card-Pic-1 {
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: url("Charlie.jpg");
+    width: 288px;
+    height: 288px;
+    background-attachment: scroll;
+    background-position: center bottom;
 
 }
 
 .History {
-    align-items: left;
+
 }
