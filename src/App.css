@@ -1,0 +1,68 @@
+.App-hero {
+    height:100vh;
+    text-align:center;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-direction:column;
+        flex-direction:column;
+}
+
+
+
+.App-header {
+    background:url('Banner.jpg') 100% no-repeat;
+    background-size:cover;
+    width: 1903px;
+    height: 493px;
+    color: white;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    text-align: right;
+    text-shadow: 4px 3px green;
+}
+
+
+
+.header h1 {
+  font-size: 6em;
+    text-shadow: 4px 3px green;
+    font-family: Verdana, cursive;
+
+
+}
+
+nav {
+    height: 5.2em;
+    background-color: white;
+    text-align: right;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -ms-flexbox;
+    display: flex;
+    border-top: black double 5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.3em;
+}
+
+nav a{
+    padding: .5em;
+}
+
+.Title2 {
+
+}
+
+.Card-Pic-1 {
+
+}
+
+.History {
+    align-items: left;
+}
