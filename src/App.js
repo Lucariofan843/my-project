@@ -23,9 +23,10 @@ class About extends Component {
  render() {
      return (
      <Router>
+         <div>
          <div className="Title2">
              <h1>About</h1>
-
+         </div>
          <div className="History">
              <body>
              <p>Change is a non-profit charitable organization that has provided excellent person-centered programs and services to individuals with disabilities for over 50 years.
@@ -36,28 +37,29 @@ class About extends Component {
 
                  In 1992 Change adopted its new name (Carroll Haven Achieving New Growth Experiences). What first started as a small program to address only a few children in Carroll County has now grown to servicing nearly 200 individuals in five counties.  Change partners with families, caregivers, and advocates to provide excellent opportunities to all those we serve. We embrace evidence based, customized approaches to continuously improve person-centered outcomes.</p> </body> </div>
        <div className="Staff">
-        <div>
             <h1>Staff Members</h1>
-            <div>
+        </div>
+           <div>
             <ul>
                 <li>
                     <Link to="/About/Staff/1"> Charlie Im</Link>
-                     </li>
-                <li>
-                    <Link to="About/Staff/2">Teresa O'Brien</Link> </li>
-                <li>
-                  <Link to="About/Staff/3">Court Dudek</Link>
                 </li>
-            </ul>
-        </div>
-        </div>
+                <li>
+                    <Link to="About/Staff/2">Teresa O'Brien</Link>
+              </li>
+               <li>
+               <Link to="About/Staff/3">Court Dudek</Link>
+               </li>
+           </ul>
+     </div>
 
+
+
+         <Route path="/About/Staff/1" exact component={Staff1} />
 
          </div>
-
-         </div>
-         <Route path="About/Staff/1" component={Staff1}/>
      </Router>
+
      );
  }
 }
