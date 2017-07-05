@@ -32,8 +32,6 @@
   font-size: 6em;
     text-shadow: 4px 3px green;
     font-family: Verdana, cursive;
-
-
 }
 
 nav {
@@ -51,25 +49,114 @@ nav {
     font-size: 1.3em;
 }
 
-nav a{
+.nav padding{
     padding: .5em;
 }
 
-.Title2 {
-
+.Cards
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction:row;
+    flex-direction:row;
 }
 
-.Card-Pic-1 {
+.Card1 {
+    background-color: #F8F8E8;
+    box-shadow: 3px 5px 4px darkgray;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    -ms-flex-align: center;
+    align-content: center;
+    width: 300px;
+    height: 300px;
+    margin: 4em 10em;
+}
+
+.Card2 {
+    background-color: #F8F8E8;
+    box-shadow: 3px 5px 4px darkgray;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    -ms-flex-align: center;
+    align-content: center;
+    margin: 4em 10em;
+    width: 300px;
+    height: 300px;
+}
+
+.Card3 {
+    background-color: #F8F8E8;
+    box-shadow: 3px 5px 4px darkgray;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    -ms-flex-align: center;
+    align-content: center;
+    margin: 4em 10em;
+    width: 300px;
+    height: 300px;
+}
+
+.Name {
+
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    -ms-flex-align: center;
+    align-content: center;
+    font-size: 2em;
+}
+
+.jobTitle
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    -ms-flex-align: center;
+    align-content: center;
+    font-size: 1.8em;
+}
+
+.card-image1 {
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 75%;
     background-image: url("Charlie.jpg");
+    background-position: center;
     width: 288px;
     height: 288px;
-    background-attachment: scroll;
-    background-position: center bottom;
-
+    display: -ms-flexbox;
+    display: flex;
 }
 
-.History {
+.card-image2 {
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-image: url("Tonya.jpg");
+    background-position: center;
+    width: 288px;
+    height: 288px;
+    display: -ms-flexbox;
+    display: flex;
+}
 
+.card-image3 {
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-image: url("Patty.jpg");
+    background-position: center;
+    width: 288px;
+    height: 288px;
+    display: -ms-flexbox;
+    display: flex;
 }
