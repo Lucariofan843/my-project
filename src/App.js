@@ -48,6 +48,34 @@ class About extends Component {
  }
 }
 
+class Home extends Component {
+ render() {
+   return (
+
+<div>
+
+<div className="container">
+
+     <div className="Textbox">
+         <div className="Welcomeimage"/>
+         <div className="Welcome"> Change is a non-profit charitable organization that has provided excellent person-centered programs and services to individuals with disabilities for over 50 years.</div>
+     </div>
+     <div className="Homeimages">
+         <div className="Homeimage1"/> <div className="Homeimage2"/>
+
+         </div>
+         <div className="Costs">Contact us for more details.</div>
+         <div className="Time">Open 8:30 A.M. to 4 P.M.</div>
+</div>
+</div>
+
+ );
+ }
+
+
+
+}
+
 class App extends Component {
   render() {
     return (
@@ -64,15 +92,19 @@ class App extends Component {
           <div className="nav">
               <div className="nav Link">
                 <nav>
-                    <padding href="/">Home</padding> |
+                    <padding><Link to="/">Home</Link></padding> |
                     <padding><Link to="/About">About</Link></padding> |
                     <padding href="/Events">Events</padding>
                 </nav>
               </div>
           </div>
+
+                 <Route path="/" exact component={Home} />
                  <Route path="/About" exact component={About} />
 
-          </div>
+
+
+      </div>
       </Router>
     );
 

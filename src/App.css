@@ -26,7 +26,12 @@
     text-shadow: 4px 3px green;
 }
 
+.container {
 
+    display: -ms-flexbox;
+    display: flex;
+
+}
 
 .header h1 {
   font-size: 6em;
@@ -51,6 +56,103 @@ nav {
 
 .nav padding{
     padding: .5em;
+}
+
+.Welcomeimage{
+    background:url("Logo.jpg") 100% no-repeat;
+    background-position: top;
+    background-size: contain;
+    width: 96%;
+    height: 96%;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.Welcome {
+    text-align: center;
+    font-size: 1.1em;
+    font-family: "Times New Roman", cursive;
+    display: -ms-flexbox;
+    display: flex;
+
+}
+
+.Textbox {
+align-content: flex-start;
+-ms-flex-align: start;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-direction: row;
+    flex-direction: row;
+    height: 14em;
+    width: 9em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    flex-wrap: wrap;
+    flex-basis: 14em;
+}
+
+.Homeimages {
+
+    -ms-flex-align: start;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 70em;
+    align-content: flex-start;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+}
+
+.Homeimage1 {
+     background: url("Service Array.jpg") 100% no-repeat;
+     background-size: contain;
+     width: 100%;
+     height: 100%;
+     background-position: center;
+    margin-bottom: 1em;
+
+ }
+
+.Homeimage2 {
+    background: url("Change.jpg") 100% no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    margin-bottom: 2em;
+}
+
+.Costs {
+    text-align: right;
+    align-content: flex-end;
+    -ms-flex-align: end;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: 3em;
+    padding-bottom: 1em;
+    padding-right: 2em;
+    font-size: 2em;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.Time {
+
+        padding-top: 0.4em;
+        text-align: center;
+        font-size: 2.4em;
+        font-family: "Times New Roman", sans-serif;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
 }
 
 .Cards
