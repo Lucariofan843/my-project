@@ -262,3 +262,121 @@ display: flex;
     display: -ms-flexbox;
     display: flex;
 }
+
+
+.eventsList {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction:row;
+    flex-direction: row;
+    align-content: flex-start;
+    -ms-flex-align: start;
+}
+
+.event1 {
+    background-color: lawngreen;
+    box-shadow: 4px 5px 6px black;
+    width: 375px;
+
+    align-content: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction:column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    margin-bottom: 2em;
+}
+
+.event2 {
+    background-color: khaki;
+    box-shadow: black 3px 4px 7px;
+    width: 789px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction:column;
+    flex-direction: column;
+    align-content: center;
+    margin-right: 3em;
+    -ms-flex-align: center;
+    margin-bottom: 2em;
+    margin-left: 2em;
+}
+
+.event3 {
+    background-color: dodgerblue;
+    box-shadow: 2px 3px 5px;
+    width: 300px;
+    align-content: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction:column;
+    flex-direction: column;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    -ms-flex-align: center;
+    margin-bottom: 2em;
+}
+
+.eventimage{
+    
+    background-image: url("Golf.jpg");
+    width: 121px;
+    height: 116px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 8.4em;
+    -ms-flex-align: center;
+}
+
+.event2image {
+
+    background: url("Bingo.jpg");
+    width: 983px;
+    height: 228px;
+    background-repeat: no-repeat;
+    display: -ms-flexbox;
+    display: flex;
+    background-size: 60%;
+    background-position: 80px 20px;
+    -ms-flex-align: center;
+}
+
+.event3image {
+
+    background: url("Crabs.jpg");
+    width: 938px;
+    height: 322px;
+    background-repeat: no-repeat;
+    display: -ms-flexbox;
+    display: flex;
+    background-size: 30%;
+    background-position: 32px 15px;
+    -ms-flex-align: center;
+
+}
+
+.title{
+    font-family: "Times New Roman", sans-serif;
+    font-size: 2em;
+    font-style: italic;
+    text-align: center;
+
+}
+
+.date {
+    font-family: "Arial", cursive;
+    font-size: 1.8em;
+    text-align: center;
+
+
+}
+
+.description {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+
+}
