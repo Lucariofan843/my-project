@@ -1,7 +1,7 @@
 import React,  { Component } from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import './App.css';
-
+import {TemperatureConverter} from 'cis137-components';
 
 
 class About extends Component {
