@@ -1,6 +1,7 @@
 import React,  { Component } from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import './App.css';
+import request from 'superagent';
 import {TemperatureConverter} from 'cis137-components';
 
 
@@ -111,6 +112,22 @@ class Events extends Component {
             );
            }
         }
+
+class Weather extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            temp: ''
+        };
+    }
+
+    mountedComponent(){
+        request
+            .get('http://api.openweathermap.org/data/2.5/weather?zip=21157,us&appid=')
+
+    }
+
+}
 
 
 class App extends Component {
