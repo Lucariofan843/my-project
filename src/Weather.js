@@ -8,36 +8,36 @@ const weatherData = [
         },
         "weather": [
             {
-                "id": 721,
-                "main": "Haze",
-                "description": "haze",
-                "icon": "50d"
+                "id": 802,
+                "main": "Clouds",
+                "description": "scattered clouds",
+                "icon": "03d"
             }
         ],
         "base": "stations",
         "main": {
-            "temp": 306.33,
+            "temp": 302.48,
             "pressure": 1018,
-            "humidity": 52,
-            "temp_min": 304.15,
-            "temp_max": 308.15
+            "humidity": 70,
+            "temp_min": 299.15,
+            "temp_max": 304.15
         },
         "visibility": 16093,
         "wind": {
-            "speed": 5.1,
-            "deg": 270
+            "speed": 2.1,
+            "deg": 190
         },
         "clouds": {
-            "all": 1
+            "all": 40
         },
-        "dt": 1499969700,
+        "dt": 1500043500,
         "sys": {
             "type": 1,
             "id": 1324,
-            "message": 0.0248,
+            "message": 0.0082,
             "country": "US",
-            "sunrise": 1499939537,
-            "sunset": 1499992497
+            "sunrise": 1500025975,
+            "sunset": 1500078870
         },
         "id": 0,
         "name": "Westminster",
