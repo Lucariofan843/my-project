@@ -1,7 +1,7 @@
 import React,  { Component } from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import './App.css';
-import request from 'superagent';
+import {request, get} from 'superagent';
 import {TemperatureConverter} from 'cis137-components';
 
 
@@ -48,6 +48,25 @@ class About extends Component {
 }
 
 class Home extends Component {
+
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            temp: ''
+        };
+    }
+
+    mountedComponent() {
+        request
+            .get('http://api.openweathermap.org/data/2.5/weather?zip=21157,us&appid=' ${process.env.REACT_APP_WEATHER_ACCESS_KEY})
+            .end((res) => {
+                this.setState({
+                    temp: res.body.main.temp
+                });
+            })
+    }
+
  render() {
    return (
 
@@ -67,6 +86,7 @@ class Home extends Component {
          <div className="Costs">Contact us for more details.</div>
          <div className="Time">Open 8:30 A.M. to 4 P.M.</div>
 </div>
+ <div>{this.state.temp}</div>
 </div>
 
  );
@@ -113,21 +133,6 @@ class Events extends Component {
            }
         }
 
-class Weather extends Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            temp: ''
-        };
-    }
-
-    mountedComponent(){
-        request
-            .get('http://api.openweathermap.org/data/2.5/weather?zip=21157,us&appid=')
-
-    }
-
-}
 
 
 class App extends Component {
