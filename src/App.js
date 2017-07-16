@@ -59,7 +59,7 @@ class Home extends Component {
 
     mountedComponent() {
         request
-            .get('http://api.openweathermap.org/data/2.5/weather?zip=21157,us&appid=' ${process.env.REACT_APP_WEATHER_ACCESS_KEY})
+            .get('http://api.openweathermap.org/data/2.5/weather?zip=21157,us&appid=${process.env.REACT_APP_WEATHER_ACCESS_KEY}')
             .end((res) => {
                 this.setState({
                     temp: res.body.main.temp
@@ -86,7 +86,7 @@ class Home extends Component {
          <div className="Costs">Contact us for more details.</div>
          <div className="Time">Open 8:30 A.M. to 4 P.M.</div>
 </div>
- <div>{this.state.temp}</div>
+ <h1>{this.state.temp}</h1>
 </div>
 
  );
