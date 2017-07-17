@@ -371,9 +371,6 @@ display: flex;
     -ms-flex-direction:column;
     flex-direction: column;
     width: 500px;
-}
-
-.temperaturecaption {
     font-family: "Arial", cursive;
     font-size: 2em;
 }

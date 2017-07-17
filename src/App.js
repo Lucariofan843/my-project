@@ -56,9 +56,8 @@ class Home extends Component {
     };
     }
 
-    mountedComponent() {
-        request
-            .get('http://api.openweathermap.org/data/2.5/weather?zip=21157,us&appid=${process.env.REACT_APP_WEATHER_ACCESS_KEY}')
+    componentDidMount() {
+        request.get(`http://api.openweathermap.org/data/2.5/weather?zip=21157,us&appid=${process.env.REACT_APP_WEATHER_ACCESS_KEY}`)
             .end((err, response) => {
                 if(err){
                     console.error(err);
@@ -70,17 +69,18 @@ class Home extends Component {
                     temp: response.body.main.temp
                 });
             })
+
     }
 
  render() {
    return (
 
 <div>
-    <div className="weather">
-        <h1>{this.state.temp}</h1>
-    </div>
-<div className="container">
 
+<div className="container">
+    <div className="weather">
+       {this.state.temp}
+    </div>
      <div className="Textbox">
          <div className="Welcomeimage"/>
          <div className="Welcome"> Change is a non-profit charitable organization that has provided excellent person-centered programs and services to individuals with disabilities for over 50 years.</div>
