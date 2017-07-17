@@ -1,7 +1,7 @@
 import React,  { Component } from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import './App.css';
-import {request, get} from 'superagent';
+import request from 'superagent';
 import {TemperatureConverter} from 'cis137-components';
 
 
@@ -49,20 +49,25 @@ class About extends Component {
 
 class Home extends Component {
 
-
     constructor(props) {
         super(props);
         this.state = {
             temp: ''
-        };
+    };
     }
 
     mountedComponent() {
         request
             .get('http://api.openweathermap.org/data/2.5/weather?zip=21157,us&appid=${process.env.REACT_APP_WEATHER_ACCESS_KEY}')
-            .end((res) => {
+            .end((err, response) => {
+                if(err){
+                    console.error(err);
+                    return;
+                }
+
+                console.log(response);
                 this.setState({
-                    temp: res.body.main.temp
+                    temp: response.body.main.temp
                 });
             })
     }
@@ -71,7 +76,9 @@ class Home extends Component {
    return (
 
 <div>
-
+    <div className="weather">
+        <h1>{this.state.temp}</h1>
+    </div>
 <div className="container">
 
      <div className="Textbox">
@@ -85,8 +92,9 @@ class Home extends Component {
          </div>
          <div className="Costs">Contact us for more details.</div>
          <div className="Time">Open 8:30 A.M. to 4 P.M.</div>
+
 </div>
- <h1>{this.state.temp}</h1>
+
 </div>
 
  );
@@ -107,7 +115,7 @@ class Events extends Component {
                        <div className="title">Golf Tournament</div>
                        <div className="eventimage"/>
                        <div className="date">June 8th</div>
-                       <div className="description">proceeds from this event benefit the individuals and families of Change, Inc.          </div>
+                       <div className="description">proceeds from this event benefit the individuals and families of Change, Inc.</div>
                </div>
 
                <div className="event2">
