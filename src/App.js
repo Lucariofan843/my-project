@@ -79,7 +79,7 @@ class Home extends Component {
 
 <div className="container">
     <div className="weather">
-       {this.state.temp}
+        <TemperatureConverter kelvin={this.state.temp} toUnit="F"/>
     </div>
      <div className="Textbox">
          <div className="Welcomeimage"/>

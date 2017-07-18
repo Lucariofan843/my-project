@@ -1,5 +1,6 @@
 .App-hero {
     height:100vh;
+    width: auto;
     text-align:center;
     display:-ms-flexbox;
     display:flex;
@@ -10,7 +11,7 @@
 .App-header {
     background:url('Banner.jpg') 100% no-repeat;
     background-size:cover;
-    width: 1903px;
+    width: auto;
     height: 493px;
     color: white;
     -ms-flex-align: center;
@@ -167,7 +168,7 @@ display: flex;
     align-content: center;
     width: 300px;
     height: 300px;
-    margin: 4em 10em;
+    margin: 4em 5em;
 }
 
 .Card2 {
@@ -180,7 +181,7 @@ display: flex;
     flex-direction:column;
     -ms-flex-align: center;
     align-content: center;
-    margin: 4em 10em;
+    margin: 4em 5em;
     width: 300px;
     height: 300px;
 }
@@ -195,7 +196,7 @@ display: flex;
     flex-direction:column;
     -ms-flex-align: center;
     align-content: center;
-    margin: 4em 10em;
+    margin: 4em 5em;
     width: 300px;
     height: 300px;
 }
@@ -265,8 +266,8 @@ display: flex;
 .event1 {
     background-color: lawngreen;
     box-shadow: 4px 5px 6px black;
-    width: 375px;
-
+    width: 260px;
+    height: 400px;
     align-content: center;
     display: -ms-flexbox;
     display: flex;
@@ -279,13 +280,14 @@ display: flex;
 .event2 {
     background-color: khaki;
     box-shadow: black 3px 4px 7px;
-    width: 789px;
+    width: 400px;
+    height: 400px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction:column;
     flex-direction: column;
     align-content: center;
-    margin-right: 3em;
+    margin-right: 2em;
     -ms-flex-align: center;
     margin-bottom: 2em;
     margin-left: 2em;
@@ -295,19 +297,18 @@ display: flex;
     background-color: dodgerblue;
     box-shadow: 2px 3px 5px;
     width: 300px;
+    height: 400px;
     align-content: center;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction:column;
     flex-direction: column;
-    padding-right: 2em;
-    padding-bottom: 2em;
+    text-align: center;
     -ms-flex-align: center;
     margin-bottom: 2em;
 }
 
 .eventimage{
-    
     background-image: url("Golf.jpg");
     width: 121px;
     height: 116px;
@@ -316,8 +317,7 @@ display: flex;
     background-position: center;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 8.4em;
-    -ms-flex-align: center;
+    align-self: center;
 }
 
 .event2image {
@@ -328,9 +328,10 @@ display: flex;
     background-repeat: no-repeat;
     display: -ms-flexbox;
     display: flex;
-    background-size: 60%;
-    background-position: 80px 20px;
+    background-size: 36%;
+    background-position: center;
     -ms-flex-align: center;
+    align-self: center;
 }
 
 .event3image {
@@ -342,8 +343,9 @@ display: flex;
     display: -ms-flexbox;
     display: flex;
     background-size: 30%;
-    background-position: 32px 15px;
+    background-position: center;
     -ms-flex-align: center;
+    align-self: center;
 }
 
 .title{
@@ -372,5 +374,10 @@ display: flex;
     flex-direction: column;
     width: 500px;
     font-family: "Arial", cursive;
-    font-size: 2em;
+    font-size: 2.6em;
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgba(19, 288, 50, 1);
+    text-shadow: 1px 2px 2px black;
 }
+
