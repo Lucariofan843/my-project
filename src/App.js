@@ -83,7 +83,7 @@ class Home extends Component {
     </div>
      <div className="Textbox">
          <div className="Welcomeimage"/>
-         <div className="Welcome"> Change is a non-profit charitable organization that has provided excellent person-centered programs and services to individuals with disabilities for over 50 years.</div>
+         <div className="Welcome"> Change, Inc. partners with and supports individuals with disabilities to achieve community integration and independence through personal choices.</div>
      </div>
      <div className="Homeimages">
          <div className="Homeimage1"/>
@@ -91,7 +91,7 @@ class Home extends Component {
 
          </div>
          <div className="Costs">Contact us for more details.</div>
-         <div className="Time">Open 8:30 A.M. to 4 P.M.</div>
+         <div className="Time">Open 9 A.M. to 3 P.M.</div>
 
 </div>
 
