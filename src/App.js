@@ -1,6 +1,7 @@
 import React,  { Component } from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import './App.css';
+import 'bulma/css/bulma.css';
 import request from 'superagent';
 import {TemperatureConverter} from 'cis137-components';
 
@@ -112,7 +113,7 @@ class Events extends Component {
 
                <div className="event1">
 
-                       <div className="title">Golf Tournament</div>
+                       <div className="eventTitle">Golf Tournament</div>
                        <div className="eventimage"/>
                        <div className="date">June 8th</div>
                        <div className="description">proceeds from this event benefit the individuals and families of Change, Inc.</div>
@@ -120,7 +121,7 @@ class Events extends Component {
 
                <div className="event2">
 
-               <div className="title">Bingo</div>
+               <div className="eventTitle">Bingo</div>
                <div className="event2image"/>
                <div className="date">March 24th</div>
                <div className="description">proceeds from this event benefit the individuals and families of Change, Inc.</div>
@@ -129,7 +130,7 @@ class Events extends Component {
 
                <div className="event3">
 
-               <div className="title">crab-a-palooza</div>
+               <div className="eventTitle">crab-a-palooza</div>
                <div className="event3image"/>
                <div className="date">September 15th</div>
                <div className="description">All proceeds from this event benefit the many services we provide at Change, Inc.</div>
