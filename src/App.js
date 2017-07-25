@@ -149,21 +149,27 @@ class App extends Component {
     return (
       <Router>
         <header class="hero">
-            <div class="hero-body">
-                <h1 class="title">
+            <img src="Banner.jpg" alt="Banner">
+            </img>
+            <div className="App-header">
+                <div className="header h1">
 
-                    Change Inc.</h1>
+                    <header>
+                        <h1>Change Inc.</h1>
+                    </header>
 
+                </div>
+            </div>
+            <div className="nav">
+              <div className="nav Link">
 
-              <h2 class="subtitle">
+                <nav>
+                    <padding><Link to="/">Home</Link></padding> |
+                    <padding><Link to="/About">About</Link></padding> |
+                    <padding><Link to="/Events">Events</Link></padding>
+                </nav>
 
-
-                    <Link to="/">Home</Link> |
-                    <Link to="/About">About</Link> |
-                    <Link to="/Events">Events</Link> |
-
-              </h2>
-
+              </div>
             </div>
 
             <Route path="/" exact component={Home} />
