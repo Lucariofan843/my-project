@@ -91,7 +91,6 @@ display: flex;
 }
 
 .Homeimages {
-
     -ms-flex-align: start;
     display: -ms-flexbox;
     display: flex;
@@ -321,7 +320,6 @@ display: flex;
 }
 
 .event2image {
-
     background: url("Bingo.jpg");
     width: 983px;
     height: 228px;
@@ -335,7 +333,6 @@ display: flex;
 }
 
 .event3image {
-
     background: url("Crabs.jpg");
     width: 938px;
     height: 322px;

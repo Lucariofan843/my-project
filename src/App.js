@@ -148,32 +148,28 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App-hero">
-            <div className="App-header">
-                <div className="header h1">
+        <header class="hero">
+            <div class="hero-body">
+                <h1 class="title">
 
-                    <header>
-                        <h1>Change Inc.</h1>
-                    </header>
+                    Change Inc.</h1>
 
-                </div>
-            </div>
-            <div className="nav">
-              <div className="nav Link">
 
-                <nav>
-                    <padding><Link to="/">Home</Link></padding> |
-                    <padding><Link to="/About">About</Link></padding> |
-                    <padding><Link to="/Events">Events</Link></padding>
-                </nav>
+              <h2 class="subtitle">
 
-              </div>
+
+                    <Link to="/">Home</Link> |
+                    <Link to="/About">About</Link> |
+                    <Link to="/Events">Events</Link> |
+
+              </h2>
+
             </div>
 
             <Route path="/" exact component={Home} />
             <Route path="/About" exact component={About} />
             <Route path="/Events" exact component={Events} />
-        </div>
+        </header>
       </Router>
     );
 
