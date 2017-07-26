@@ -78,7 +78,7 @@ class Home extends Component {
 
 <div>
 
-<div className="container">
+<div className="details">
     <div className="weather">
         <TemperatureConverter kelvin={this.state.temp} toUnit="F"/>
     </div>
@@ -149,17 +149,15 @@ class App extends Component {
     return (
       <Router>
         <header class="hero">
-            <img src="Banner.jpg" alt="Banner">
-            </img>
-            <div className="App-header">
+            <div class="hero-head">
                 <div className="header h1">
 
-                    <header>
-                        <h1>Change Inc.</h1>
-                    </header>
+
+                        <h1 class="title">Change Inc.</h1>
+
 
                 </div>
-            </div>
+
             <div className="nav">
               <div className="nav Link">
 
@@ -175,6 +173,7 @@ class App extends Component {
             <Route path="/" exact component={Home} />
             <Route path="/About" exact component={About} />
             <Route path="/Events" exact component={Events} />
+            </div>
         </header>
       </Router>
     );
