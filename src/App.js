@@ -150,6 +150,7 @@ class App extends Component {
   render() {
     return (
       <Router>
+          <section>
         <header className="hero">
             <div className="hero-head">
                 <div className="header h1">
@@ -159,7 +160,8 @@ class App extends Component {
                 </div>
             </div>
             <div className="nav">
-              <div className="nav Link">
+              <div className="Link">
+                  <h2 className="subtitle">
 
                 <nav>
                     <padding><Link to="/">Home</Link></padding> |
@@ -167,6 +169,7 @@ class App extends Component {
                     <padding><Link to="/Events">Events</Link></padding>
                 </nav>
 
+                  </h2>
               </div>
             </div>
 
@@ -174,6 +177,14 @@ class App extends Component {
             <Route path="/About" exact component={About} />
             <Route path="/Events" exact component={Events} />
         </header>
+        <footer className="footer-is-paddingless">
+          <div className="container">
+              <div className="has-text-centered">
+                <p>Change, Inc.</p>
+              </div>
+          </div>
+        </footer>
+          </section>
       </Router>
     );
 
