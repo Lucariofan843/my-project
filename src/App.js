@@ -47,6 +47,23 @@ class About extends Component {
  }
 }
 
+class Video extends Component {
+    render() {
+        return (
+            <div className="box">
+            <div className="youtubevideo">
+
+            </div>
+
+
+            </div>
+
+
+        );
+    }
+}
+
+
 class Home extends Component {
 
     constructor(props) {
@@ -170,7 +187,8 @@ class App extends Component {
                 <nav>
                     <padding><Link to="/">Home</Link></padding> |
                     <padding><Link to="/About">About</Link></padding> |
-                    <padding><Link to="/Events">Events</Link></padding>
+                    <padding><Link to="/Events">Events</Link></padding> |
+                    <padding><Link to="/Video">Video</Link></padding>
                 </nav>
 
                   </h2>
@@ -180,13 +198,12 @@ class App extends Component {
             <Route path="/" exact component={Home} />
             <Route path="/About" exact component={About} />
             <Route path="/Events" exact component={Events} />
+            <Route path="/Video" exact component={Video} />
         </header>
-        <footer className="footer-is-paddingless">
-          <div className="container">
+        <footer className="footer">
               <div className="has-text-centered">
                 <p>Change, Inc.</p>
               </div>
-          </div>
         </footer>
           </section>
       </Router>
