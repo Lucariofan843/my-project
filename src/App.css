@@ -416,4 +416,5 @@ display: flex;
     border: solid 1px red;
     width: 600px;
     align-self: center;
+    text-decoration: black;
 }
