@@ -38,11 +38,11 @@ export default class Home extends Component {
                         <div className="Welcomeimage"/>
                         <div className="Welcome"> Change, Inc. partners with and supports individuals with disabilities to achieve community integration and independence through personal choices.</div>
                     </div>
-                    <div className="Homeimages">
+                    <div className="Homeimages is-hidden-mobile">
                         <div className="Homeimage1"/>
                         <div className="Homeimage2"/>
                     </div>
-                    <div className="Costs">Contact us for more details.</div>
+                    <div className="Costs is-hidden-mobile">Contact us for more details.</div>
                     <div className="Time">Open 9 A.M. to 3 P.M.</div>
                 </div>
             </div>
