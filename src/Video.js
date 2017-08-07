@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 export default class Video extends Component {
     render() {
         return (
-            <div className="box">
+            <div className="box is-block-mobile">
                 <div className="title">Very inspiring video!</div>
                 <div className="youtubevideo">
 

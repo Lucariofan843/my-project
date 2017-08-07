@@ -7,8 +7,8 @@ export default class Events extends Component {
             <div>
                 <div className="eventText">Change Inc's Events</div>
                 <div className="eventsList">
-                    <div className="columns is-gapless">
-                        <div className="column">
+                    <div className="columns">
+                        <div className="column is-block-mobile">
                             <div className="event1">
                                 <div className="eventTitle">Golf Tournament</div>
                                 <div className="eventimage"/>
@@ -16,7 +16,7 @@ export default class Events extends Component {
                                 <div className="description">proceeds from this event benefit the individuals and families of Change, Inc.</div>
                             </div>
                         </div>
-                        <div className="column">
+                        <div className="column is-block-mobile">
                             <div className="event2">
                                 <div className="eventTitle">Bingo</div>
                                 <div className="event2image"/>
@@ -24,7 +24,7 @@ export default class Events extends Component {
                                 <div className="description">proceeds from this event benefit the individuals and families of Change, Inc.</div>
                             </div>
                         </div>
-                        <div className="column">
+                        <div className="column is-block-mobile">
                             <div className="event3">
                                 <div className="eventTitle">crab-a-palooza</div>
                                 <div className="event3image"/>

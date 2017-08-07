@@ -161,16 +161,18 @@ display: flex;
     padding: .5em 0;
     font-weight: bold;
     font-size: 1.8em;
+    align-items: center;
 }
 
 .section {
     border: black 1px solid;
 }
 
-.staffMembers {
+.staff {
     padding-top: 1em;
     font-weight: bold;
     font-size: 1.5em;
+    align-items: center;
 }
 
 .eventText {
@@ -181,8 +183,6 @@ display: flex;
 .Cards {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction:row;
-    flex-direction:row;
 }
 
 .Card1 {
@@ -286,10 +286,6 @@ display: flex;
 .eventsList {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction:row;
-    flex-direction: row;
-    align-content: flex-start;
-    -ms-flex-align: start;
 }
 
 
@@ -310,17 +306,15 @@ display: flex;
 .event2 {
     background-color: khaki;
     box-shadow: black 3px 4px 7px;
-    width: 400px;
+    width: 350px;
     height: 400px;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction:column;
+    -ms-flex-direction: column;
     flex-direction: column;
     align-content: center;
-    margin-right: 2em;
     -ms-flex-align: center;
     margin-bottom: 2em;
-    margin-left: 2em;
 }
 
 .event3 {
@@ -358,7 +352,7 @@ display: flex;
     background-repeat: no-repeat;
     display: -ms-flexbox;
     display: flex;
-    background-size: 36%;
+    background-size: 32%;
     background-position: center;
     -ms-flex-align: center;
     align-self: center;
@@ -413,7 +407,14 @@ display: flex;
 
 .box {
     border: solid 1px red;
-    width: 600px;
+    max-width: 600px;
     align-self: center;
     text-decoration: black;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.youtubevideo {
+    display: -ms-flexbox;
+    display: flex;
 }

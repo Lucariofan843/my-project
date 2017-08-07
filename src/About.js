@@ -12,9 +12,9 @@ export default class About extends Component {
                             Carroll Haven Center was incorporated in 1969 and increased their services to include adults as well as children.
                             In 1992 Change adopted its new name (Carroll Haven Achieving New Growth Experiences). What first started as a small program to address only a few children in Carroll County has now grown to servicing nearly 200 individuals in five counties.  Change partners with families, caregivers, and advocates to provide excellent opportunities to all those we serve. We embrace evidence based, customized approaches to continuously improve person-centered outcomes.</p> </div></section>
 
-                <div className="staffMembers">Staff Members</div>
+                <div className="staff">Staff</div>
 
-                <div className="Cards">
+                <div className="Cards is-block-mobile">
 
                     <div className="Card1">
                         <div className="Name">Charlie Im</div>
@@ -22,14 +22,14 @@ export default class About extends Component {
                         <div className="jobTitle">Manager</div>
                     </div>
 
-                    <div className="Card2">
+                    <div className="Card2 ">
                         <div className="Name">Tonya Stonesifer</div>
                         <div className="card-image2"/>
                         <div className="jobTitle">Quality Coordinator</div>
 
                     </div>
 
-                    <div className="Card3">
+                    <div className="Card3 ">
                         <div className="Name">Patty Schomann</div>
                         <div className="card-image3"/>
                         <div className="jobTitle">DSP</div>
