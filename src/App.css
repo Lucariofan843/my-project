@@ -51,7 +51,7 @@
     font-size: 1.3em;
 }
 
-.nav padding{
+.nav padding {
     padding: .5em;
 }
 
@@ -98,12 +98,11 @@ display: flex;
 }
 
 .Homeimages {
-
     -ms-flex-align: center;
     display: -ms-flexbox;
     display: flex;
     flex-wrap: nowrap;
-    flex-basis: 512px;
+    flex-basis: 472px;
     align-content: center;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -345,7 +344,6 @@ display: flex;
 }
 
 .event2image {
-
     background: url("Bingo.jpg");
     width: 983px;
     height: 228px;
@@ -359,7 +357,6 @@ display: flex;
 }
 
 .event3image {
-
     background: url("Crabs.jpg");
     width: 938px;
     height: 322px;
@@ -407,7 +404,7 @@ display: flex;
 
 .box {
     border: solid 1px red;
-    max-width: 600px;
+    max-width: 370px;
     align-self: center;
     text-decoration: black;
     display: -ms-flexbox;
